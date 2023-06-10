@@ -21,7 +21,7 @@ export const ContactForm = () => {
       name: e.target.name.value,
       number: e.target.number.value,
     };
-    if (contacts.contacts.find(({ name }) => name === contact.name)) {
+    if (contacts.find(({ name }) => name === contact.name)) {
       alert('sorry');
       return;
     }
