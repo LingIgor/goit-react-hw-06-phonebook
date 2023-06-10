@@ -15,7 +15,7 @@ export const ContactList = () => {
   };
 
   const getVisibleContacts = () => {
-    return contacts.contacts.filter(({ name }) =>
+    return contacts.filter(({ name }) =>
       name.toLowerCase().includes(filter.toLowerCase())
     );
   };
